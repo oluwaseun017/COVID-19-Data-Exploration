@@ -1,6 +1,7 @@
 # COVID-19-Data-Exploration
 
-    ![Coronavirus_H picx](https://github.com/oluwaseuntaiwo/COVID-19-Data-Exploration/assets/145341799/eb5e1f89-81fd-4602-a625-804b34f11d9a)
+![Coronavirus_H picx](https://github.com/oluwaseuntaiwo/COVID-19-Data-Exploration/assets/145341799/095bd45a-8ddc-475c-b470-260641b240de)
+
 
 
 ## Introduction
@@ -34,6 +35,9 @@ WHERE location LIKE '%Nigeria%'
 ORDER BY 1, 2
 ```
 
+![case dealth](https://github.com/oluwaseuntaiwo/COVID-19-Data-Exploration/assets/145341799/bf3e5ef5-3d9c-43b0-a6de-e9e00753c05b)
+
+
 ### Total Cases vs. Population
 
 We looked at the percentage of the population infected with COVID-19 in various countries. This analysis helps us understand how widely the virus spread in relation to the size of each country's population.
@@ -43,6 +47,9 @@ SELECT location, date, population, total_cases, (total_cases/population) * 100 A
 FROM CovidDeaths
 ORDER BY 1, 2
 ```
+
+![casepopu](https://github.com/oluwaseuntaiwo/COVID-19-Data-Exploration/assets/145341799/5715636a-c524-4d4c-b91f-6a261147d54e)
+
 
 ### Countries with Highest Infection Rates
 
@@ -54,6 +61,9 @@ FROM CovidDeaths
 GROUP BY location, population
 ORDER BY PercentPopulationInfected DESC
 ```
+
+![highestinfection](https://github.com/oluwaseuntaiwo/COVID-19-Data-Exploration/assets/145341799/c868b277-0e63-49e7-b290-87fdd86e4a04)
+
 
 ### Countries with Highest Death Counts
 
@@ -68,6 +78,10 @@ ORDER BY TotalDeathCount DESC
 
 --  the United States has reported a total of 1,127,152 deaths due to COVID-19, followed by Brazil with 704,659 deaths, and India with 532,027 deaths.
 ```
+
+![highestdeathcount](https://github.com/oluwaseuntaiwo/COVID-19-Data-Exploration/assets/145341799/a3753148-1297-46fa-8778-6f2adf2f0acc)
+
+
 
 ### Top 10 Countries with Highest Total Cases
 
@@ -172,7 +186,8 @@ WHERE DEA.continent IS NOT NULL
 ORDER BY 2,3
 ```
 
-![join 1](https://github.com/oluwaseuntaiwo/COVID-19-Data-Exploration/assets/145341799/50c367a3-eaff-437f-9a47-23c10c216bfc)
+![join 22](https://github.com/oluwaseuntaiwo/COVID-19-Data-Exploration/assets/145341799/09f7cb35-c045-44f7-a019-7f849f5e8bf5)
+
 
 
 ### Using CTE (Common Table Expression) to calculate rolling people vaccinated/percentage
